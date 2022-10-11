@@ -9,7 +9,6 @@ with open("message.txt") as filp:
 
     for number in numbers:
         modulus = pow(number, -1, 41)
-        print(modulus)
 
         if modulus in range(1, 27):
             flag.append(string.ascii_uppercase[modulus - 1])
